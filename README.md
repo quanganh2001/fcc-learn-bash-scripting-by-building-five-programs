@@ -4,11 +4,17 @@
 3.  To start, open the file in the main editor by clicking the filename in the left side panel.  
 
 Then, add the text `echo hello questionnaire` at the top of the file. (echo hello questionnaire >> questionnaire.sh)
+
 4.  Your script has one command. Run it with `sh questionnaire.sh` to see what happens. `sh` stands for `shell`.
+
 5.  Using `sh` to run your script uses the `shell` interpreter. Run your script again with `bash questionnaire.sh` to use the `bash` interpreter. `bash` stands for `bourne-again shell`.
+
 6. The output was the same. There are many interpreters which may not give the output you expect. Find out where the `bash` interpreter is located by entering `which bash` in the terminal. (/usr/bin/bash)
+
 7.  That's the absolute path to the `bash` interpreter. You can tell your program to use it by placing a `shebang` at the very top of the file like this: `#!<path_to_interpreter>`. Add a `shebang` at the very top of your file, the one you want looks like this: `#!/bin/bash`.
+
 8.  Now, instead of using `sh` or `bash` to run your script. You can run it by executing the file and it will default to `bash`. Run your script by executing it with `./questionnaire.sh`
+
 9.  You should have got a permission denied message because you don't have permissions to execute the script. List what's in the `project` folder in long list format with `ls -l` to see the file permissions.
 ```txt
 total 8
